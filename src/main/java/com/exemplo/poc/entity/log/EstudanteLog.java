@@ -1,12 +1,12 @@
-package com.exemplo.poc.entity;
+package com.exemplo.poc.entity.log;
 
+import com.exemplo.poc.entity.CursoEntity;
+import com.exemplo.poc.entity.PessoaEntity;
 import jakarta.persistence.*;
-import org.hibernate.envers.Audited;
 
-@Audited
 @Entity
-@Table(schema = "ensino", name = "estudante")
-public class EstudanteEntity extends EntidadeAuditavel {
+@Table(schema = "ensino_log", name = "estudante")
+public class EstudanteLog extends EntidadeLog {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

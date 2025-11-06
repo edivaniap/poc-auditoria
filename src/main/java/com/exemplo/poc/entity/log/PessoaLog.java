@@ -1,17 +1,14 @@
-package com.exemplo.poc.entity;
+package com.exemplo.poc.entity.log;
 
 import jakarta.persistence.*;
-import org.hibernate.envers.Audited;
 
 import java.time.LocalDate;
 
-@Audited
 @Entity
-@Table(schema = "comum", name = "pessoa")
-public class PessoaEntity extends EntidadeAuditavel {
+@Table(schema = "comum_log", name = "pessoa")
+public class PessoaLog extends EntidadeLog {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
@@ -28,4 +25,3 @@ public class PessoaEntity extends EntidadeAuditavel {
     private LocalDate dataNascimento;
 
 }
-

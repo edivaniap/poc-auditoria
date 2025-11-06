@@ -1,16 +1,13 @@
-package com.exemplo.poc.entity;
+package com.exemplo.poc.entity.log;
 
 import com.exemplo.poc.domain.Nivel;
 import jakarta.persistence.*;
-import org.hibernate.envers.Audited;
 
-@Audited
 @Entity
-@Table(schema = "ensino", name = "curso")
-public class CursoEntity extends EntidadeAuditavel {
+@Table(schema = "ensino_log", name = "curso")
+public class CursoLog extends EntidadeLog {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
