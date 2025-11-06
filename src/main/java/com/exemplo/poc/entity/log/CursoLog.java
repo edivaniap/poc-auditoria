@@ -1,6 +1,6 @@
 package com.exemplo.poc.entity.log;
 
-import com.exemplo.poc.domain.Nivel;
+import com.exemplo.poc.domain.Modalidade;
 import jakarta.persistence.*;
 
 @Entity
@@ -16,6 +16,6 @@ public class CursoLog extends EntidadeLog {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "nivel", length = 20, nullable = false)
-    private Nivel nivel;
+    private Modalidade nivel;
 
 }

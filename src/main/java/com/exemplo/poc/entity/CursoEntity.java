@@ -1,6 +1,6 @@
 package com.exemplo.poc.entity;
 
-import com.exemplo.poc.domain.Nivel;
+import com.exemplo.poc.domain.Modalidade;
 import jakarta.persistence.*;
 import org.hibernate.envers.Audited;
 
@@ -17,8 +17,11 @@ public class CursoEntity extends EntidadeAuditavel {
     @Column(name = "nome", length = 150, nullable = false)
     private String nome;
 
+    @Column(name = "codigo", length = 20, nullable = false)
+    private String codigo;
+
     @Enumerated(EnumType.STRING)
-    @Column(name = "nivel", length = 20, nullable = false)
-    private Nivel nivel;
+    @Column(name = "modalidade", length = 20, nullable = false)
+    private Modalidade modalidade;
 
 }

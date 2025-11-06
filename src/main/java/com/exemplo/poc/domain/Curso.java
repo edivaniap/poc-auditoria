@@ -9,6 +9,8 @@ public class Curso {
 
     private String nome;
 
-    private Nivel nivel;
+    private String codigo;
+
+    private Modalidade modalidade;
 
 }

@@ -10,22 +10,12 @@ import java.util.Arrays;
 
 @SpringBootApplication
 @RequiredArgsConstructor
-public class PocAuditoriaApplication implements CommandLineRunner {
+public class PocAuditoriaApplication {
 
     private final ApplicationContext context;
 
     public static void main(String[] args) {
         SpringApplication.run(PocAuditoriaApplication.class, args);
-    }
-
-    @Override
-    public void run(String... args) {
-        System.out.println("Beans registrados no Spring Boot:");
-        String[] beans = context.getBeanDefinitionNames();
-        Arrays.sort(beans);
-        for (String bean : beans) {
-            System.out.println(bean);
-        }
     }
 
 }
