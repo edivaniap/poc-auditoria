@@ -1,0 +1,7 @@
+spring:
+  config:
+    activate:
+      on-profile: trigger
+  jpa:
+    properties:
+      org.hibernate.envers.autoRegisterListeners: false

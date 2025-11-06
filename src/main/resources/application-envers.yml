@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: envers
+  jpa:
+    properties:
+      org.hibernate.envers.audit_table_suffix: _aud_envers
+      org.hibernate.envers.store_data_at_delete: true
+      org.hibernate.envers.revision_field_name: rev
+      org.hibernate.envers.revision_type_field_name: rev_type
